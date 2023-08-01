@@ -20,7 +20,7 @@ jobs:
 #         node-version: 14.x
     - name: Finding path  
       run: |
-        pwd
+        cd adf-gh-dev
         ls
 # #     - name: install ADF Utilities package
 # #       run: npm install
