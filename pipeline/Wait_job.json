@@ -1,0 +1,17 @@
+{
+	"name": "Wait_job",
+	"properties": {
+		"activities": [
+			{
+				"name": "Waiting",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"annotations": []
+	}
+}
