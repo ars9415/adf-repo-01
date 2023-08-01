@@ -40,7 +40,7 @@ jobs:
         resourceGroupName: new-rg
         dataFactoryName: ad-gh-actions-2
         armTemplateFile: adf-gh-dev/ARMTemplateForFactory.json
-        armTemplateParametersFile: adf-gh-dev/ARMTemplateParametersForFactory.json
+        additionalParameters: 'factoryName=adf-gh-qa'
   
 
 
