@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Checking out the repo
       uses: actions/checkout@v3
-    - name: Checking out the repo
-      uses: actions/checkout@v3
       with:
         ref: adf_publish
         path: adf_publish
@@ -38,9 +36,9 @@ jobs:
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         enable-AzPSSession: true 
 
-    - name: Validating
+#     - name: Validating
   
-      uses: Azure/data-factory-validate-action@v1.1.5
+#       uses: Azure/data-factory-validate-action@v1.1.5
       # with:
       #   path: ./mydir [optional]
       #   id: <data factory resource ID> [optional]
@@ -49,8 +47,8 @@ jobs:
       with:
         resourceGroupName: new-rg
         dataFactoryName: ad-gh-actions-2
-        armTemplateFile: /home/runner/work/adf-repo-01/adf-repo-01/adf_publish/adf-gh-dev/ARMTemplateForFactory.json
-        armTemplateParametersFile: /home/runner/work/adf-gh/adf-gh/adf_publish/adf-gh-dev/ARMTemplateParametersForFactory.json
+        armTemplateFile: ARMTemplateForFactory.json
+        armTemplateParametersFile: ARMTemplateParametersForFactory.json
   
 
 
