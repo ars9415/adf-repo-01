@@ -46,7 +46,7 @@ jobs:
       with:
         resourceGroupName: new-rg
         template: adf-gh-dev/ARMTemplateForFactory.json
-        parameters: 'factoryName=adf-gh-qa'
+        parameters: 'factoryName=ad-gh-actions-2'
   
 
 
