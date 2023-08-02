@@ -9,6 +9,8 @@ permissions:
 jobs:
   deploy-to-qa:
     runs-on: ubuntu-latest
+    environment:
+      name: testing-env
     steps:
     - name: Checking out the repo
       uses: actions/checkout@v3
